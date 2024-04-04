@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./variables.scss";
+
+body {
+  background-color: $white;
+}
+
+.box-shadow {
+  box-shadow: rgba(145, 158, 171, 0.3) 0px 0px 2px 0px,
+    rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+}
+
+.search-input {
+  outline: none;
+  color: $light-gray;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.modern-scrollbar {
+  &::-webkit-scrollbar {
+    height: 4px !important;
+    width: 6px !important;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $primary;
+    border-radius: 15px;
+  }
+}
